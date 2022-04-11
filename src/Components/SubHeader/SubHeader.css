@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Satisfy&display=swap');
+.sub-header{
+    background: rgba(19, 33, 81, 0.45);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.9px);
+    -webkit-backdrop-filter: blur(7.9px);
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Lato', sans-serif;
+    padding: 20px;
+	box-shadow: 3px 7px 14px rgba(0, 0, 0, 0.3)  ; 
+	-webkit-box-shadow: 3px 7px 14px rgba(0, 0, 0, 0.3)  ; 
+	-moz-box-shadow: 3px 7px 14px rgba(0, 0, 0, 0.3)  ; 
+}
+.sub-header-right{
+    display: flex;
+}
+input{
+    background: transparent;
+    border-style: none;
+    border-bottom: 1px solid grey;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    margin-left: 10px;
+}
+input:focus{
+    border-style: none;
+    outline: none;
+    border-bottom: 1px solid rgb(177, 173, 173);
+    font-family: 'Lato', sans-serif;
+}
+.sub-header-left{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button {
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 12px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    margin: 3px;
+    font-family: 'Lato', sans-serif;
+}   
+button:hover {
+    border: 1px solid white;
+}
+   
+   

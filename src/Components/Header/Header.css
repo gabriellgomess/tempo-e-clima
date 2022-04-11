@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Satisfy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{    
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20%;
+    box-shadow: 3px 7px 14px rgba(0, 0, 0, 0.3)  ; 
+	-webkit-box-shadow: 3px 7px 14px rgba(0, 0, 0, 0.3)  ; 
+	-moz-box-shadow: 3px 7px 14px rgba(0, 0, 0, 0.3)  ; 
+    
+    
+}
+.main-header-day{
+     background: #3b7cdd;
+     
+}
+
+.main-header-night{
+    background: #132151;
+    
+}
+
+.title>h1{
+    color: #e1dad8;
+}
+
+.clouds>img {
+    width: 300px;
+    margin: 10px;
+}
+
+.clouds, 
+.title, 
+.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.clouds>img{
+    height: 150px;
+    width: 300px;
+}
+
+.salutation{
+    font-family: 'Satisfy', cursive;
+    font-size: 35px;
+    color: #e1dad8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

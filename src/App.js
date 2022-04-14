@@ -5,6 +5,7 @@ import Main from './Components/Main/Main';
 import Table from './Components/Table/Table';
 import React, {useEffect, useState} from "react";
 import api from './Services/api';
+// import location from './Services/location';
 
 
 
@@ -16,21 +17,32 @@ function App() {
     minutes: date.getMinutes(),
     seconds: date.getSeconds()
   });
- const[cidade, setCidade] = useState("Porto Alegre");
+ const[cidade, setCidade] = useState('');
   const handleSubmit = ({cidade}) => {
     setCidade(cidade)
   }
   const[isLoading, setIsLoading] = useState(false);
-  useEffect(() => {    
+  // useEffect(() => {
+  //   location.defaults.headers.post['Content-Type'] ='application/json;charset=utf-8';
+  //   location.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
+  //   location.get().then(resp => {      
+  //     setCidade(resp.data.results.city)
+  //   })
+  //   .catch(error => {
+  //     console.log(error)
+  //   });
+          
+  // }, []);
+
+  useEffect(() => {   
     setIsLoading(true);
     api
       .get(cidade)
       .then((response) => {        
-        setClima(response.data.results)
-        
+        setClima(response.data.results)        
       })
       .finally(() => setIsLoading(false));
-      // .catch((err) =>  console.error("ops! ocorreu um erro" + err) );
+      
     
     const timer = setInterval(() => {
       const date = new Date();

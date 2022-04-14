@@ -22,19 +22,8 @@ function App() {
     setCidade(cidade)
   }
   const[isLoading, setIsLoading] = useState(false);
-  // useEffect(() => {
-  //   location.defaults.headers.post['Content-Type'] ='application/json;charset=utf-8';
-  //   location.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
-  //   location.get().then(resp => {      
-  //     setCidade(resp.data.results.city)
-  //   })
-  //   .catch(error => {
-  //     console.log(error)
-  //   });
-          
-  // }, []);
 
-  useEffect(() => {   
+  useEffect(() => {     
     setIsLoading(true);
     api
       .get(cidade)
@@ -58,14 +47,6 @@ function App() {
   }, [cidade]);
 
   const [clima, setClima] = useState([]);  
-  
-  // const relogio = () => {
-  //   return (
-  //     <div className="relogio">
-  //       <p>{dateTime.hours < 10 ? "0" + dateTime.hours : dateTime.hours }:{dateTime.minutes < 10 ? "0" + dateTime.minutes : dateTime.minutes}:{dateTime.seconds < 10 ? "0" + dateTime.seconds : dateTime.seconds}</p>
-  //     </div>
-  //   );
-  // }
 
   return (
     

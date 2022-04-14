@@ -30,13 +30,10 @@ export default function SubHeader({onSubmit}) {
     const handleSubmit = (e) => {
         e.preventDefault();
         onSubmit({cidade});
-        setCidade("");
+        setCidade("");        
     }       
     return(        
         <div className="sub-header">
-            <div className="col-sm-12 col-md-4 col-md-4 sub-header-left">
-                               
-            </div>
             <div className="col-sm-12 col-md-8 col-md-8 d-flex justify-content-center sub-header-center">
                 <form onSubmit={handleSubmit}>
                     <label>{window.screen.width < 770?"Cidade":"Digite a Cidade"} <FontAwesomeIcon icon={faLocationDot} /></label>

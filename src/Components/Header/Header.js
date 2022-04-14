@@ -23,8 +23,7 @@ export default function Header(props) {
       <div className="row w-100">
         <div className="col-sm-12 col-md-8 col-lg-8 title">
             <h1>Previsão do Tempo</h1>            
-        </div>        
-        
+        </div>
         <div className="col-sm-12 col-md-4 col-lg-4 salutation">
           {hoursDay}
         </div>

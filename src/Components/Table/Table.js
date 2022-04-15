@@ -17,7 +17,7 @@ const Table = (props) => {
                     <th colSpan="4"><h3>Próximos Dias</h3></th>
                 </tr>
                 <tr>                   
-                    <th scope="col">Data <FontAwesomeIcon icon={faCalendarDay} /></th>
+                    <th scope="col">Dia <FontAwesomeIcon icon={faCalendarDay} /></th>
                     <th scope="col">Mín <FontAwesomeIcon icon={faTemperatureArrowDown} /></th>
                     <th scope="col">Máx <FontAwesomeIcon icon={faTemperatureArrowUp} /></th>
                     <th scope="col">Condição <FontAwesomeIcon icon={faCircleInfo} /></th>

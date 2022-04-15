@@ -59,8 +59,16 @@ function App() {
       setDevice(<FontAwesomeIcon icon={faTabletScreenButton} />)
     }else if(window.screen.width >= 770){
       setDevice(<FontAwesomeIcon icon={faDesktop} />)
-    }
-    
+    }    
+  }
+  window.onload = () => {
+    if(window.screen.width <= 520){
+      setDevice(<FontAwesomeIcon icon={faMobileScreen} />)
+    }else if(window.screen.width > 520 && window.screen.width < 770){
+      setDevice(<FontAwesomeIcon icon={faTabletScreenButton} />)
+    }else if(window.screen.width >= 770){
+      setDevice(<FontAwesomeIcon icon={faDesktop} />)
+    }    
   }
   
 
@@ -74,8 +82,8 @@ function App() {
             <input type="checkbox" checked={dark} onChange={handleDark} />
             <span className="slider"></span>
           </label>
-          <div id='device' className='col-6'>
-            {device}
+          <div id='device' className='col-6 d-flex align-items-center'>            
+            {device}             
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@ const Table = (props) => {
 
     return(
         <div className="table-responsive col-sm-12 col-md-6 col-lg-6">
-        <table className="table">
+        <table className={`${props.dark == true ? "table table-striped table-dark" : "table"}`}>
             <thead>
                 <tr>
                     <th colSpan="4"><h3>Próximos Dias</h3></th>

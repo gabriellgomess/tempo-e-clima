@@ -29,3 +29,18 @@
     flex-direction: column;
     align-items: flex-start;
 }
+
+.main-dark{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    color: #b3aeae;   
+    width: 480px;
+    padding: 2%;
+    margin-bottom: 10px;
+    border-radius: 17px;
+    background: linear-gradient(145deg, #353434, #3f3e3e);
+    box-shadow:  20px 20px 60px #323131,
+                -20px -20px 60px #444343;
+}

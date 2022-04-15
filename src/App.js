@@ -5,9 +5,8 @@ import Main from './Components/Main/Main';
 import Table from './Components/Table/Table';
 import React, {useEffect, useState} from "react";
 import api from './Services/api';
-// import location from './Services/location';
-
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMobileScreen, faTabletScreenButton, faDesktop } from "@fortawesome/free-solid-svg-icons";
 
 function App() { 
 
@@ -22,6 +21,11 @@ function App() {
     setCidade(cidade)
   }
   const[isLoading, setIsLoading] = useState(false);
+  const[dark, setDark] = useState(false)
+  const handleDark = () => {
+    dark === true ? setDark(false):setDark(true)
+    console.log(dark)
+  }
 
   useEffect(() => {     
     setIsLoading(true);
@@ -46,17 +50,40 @@ function App() {
 
   }, [cidade]);
 
-  const [clima, setClima] = useState([]);  
-
-  return (
+  const [clima, setClima] = useState([]);
+  const [device, setDevice] = useState()
+  window.onresize = () => {
+    if(window.screen.width <= 520){
+      setDevice(<FontAwesomeIcon icon={faMobileScreen} />)
+    }else if(window.screen.width > 520 && window.screen.width < 770){
+      setDevice(<FontAwesomeIcon icon={faTabletScreenButton} />)
+    }else if(window.screen.width >= 770){
+      setDevice(<FontAwesomeIcon icon={faDesktop} />)
+    }
     
-    <div className="">      
+  }
+  
+
+  return (    
+    <div className={`${dark === true ? "dark" : ""}`}>   
       <Header periodo = {dateTime} />
       <SubHeader onSubmit={handleSubmit} />
-      <div className="container mt-5">
+      <div className='container mt-3'>
+        <div className='row w-100 d-flex align-items-center justify-content-between'>
+          <label className="col-6 switch">
+            <input type="checkbox" checked={dark} onChange={handleDark} />
+            <span className="slider"></span>
+          </label>
+          <div id='device' className='col-6'>
+            {device}
+          </div>
+        </div>
+      </div>
+      
+      <div className="container mt-3">        
         <div className='row d-flex justify-content-around'>
-          <Main tempo = {clima} />
-          <Table clima = {clima} />
+          <Main dark={dark} tempo = {clima} />
+          <Table dark={dark} clima = {clima} />
         </div>
       </div>
       

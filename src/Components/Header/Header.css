@@ -55,3 +55,17 @@ header{
     justify-content: center;
     align-items: center;
 }
+.noite{
+    background: #132151
+}
+.amanhecendo{
+    background: rgb(25,23,185);
+    background: linear-gradient(180deg, rgba(25,23,185,1) 0%, rgba(237,129,189,1) 50%, rgba(250,227,19,0.9288300304878049) 92%);
+}
+.dia{
+    background: #378cfa
+}
+.anoitecendo{
+    background: rgb(25,23,185);
+    background: linear-gradient(180deg, rgba(25,23,185,1) 31%, rgba(151,57,236,1) 61%, rgba(250,227,19,0.9288300304878049) 89%);
+}

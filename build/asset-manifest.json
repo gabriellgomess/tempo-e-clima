@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "https://gabriellgomess.com/api-tempo/static/css/main.c96174a2.css",
-    "main.js": "https://gabriellgomess.com/api-tempo/static/js/main.9a5aeea8.js",
-    "static/media/hail.png": "https://gabriellgomess.com/api-tempo/static/media/hail.78240612954fcb0aa798.png",
-    "static/media/snow.png": "https://gabriellgomess.com/api-tempo/static/media/snow.696bd74f5798f5c71aa2.png",
-    "static/media/storm.png": "https://gabriellgomess.com/api-tempo/static/media/storm.4a0f500e278116b32a74.png",
-    "static/media/clear_day.png": "https://gabriellgomess.com/api-tempo/static/media/clear_day.2124b68753670bfcf24d.png",
-    "static/media/fog.png": "https://gabriellgomess.com/api-tempo/static/media/fog.de9f05c04d6b50580d28.png",
-    "static/media/rain.png": "https://gabriellgomess.com/api-tempo/static/media/rain.5caa248f7ba1a187af41.png",
-    "static/media/clear_night.png": "https://gabriellgomess.com/api-tempo/static/media/clear_night.d804feff2171e1616148.png",
-    "static/media/cloudly_day.png": "https://gabriellgomess.com/api-tempo/static/media/cloudly_day.404d8ee27165f9af4434.png",
-    "index.html": "https://gabriellgomess.com/api-tempo/index.html",
-    "main.c96174a2.css.map": "https://gabriellgomess.com/api-tempo/static/css/main.c96174a2.css.map",
-    "main.9a5aeea8.js.map": "https://gabriellgomess.com/api-tempo/static/js/main.9a5aeea8.js.map"
+    "main.css": "https://gabriellgomess.github.io/tempo-e-clima/build/static/css/main.c96174a2.css",
+    "main.js": "https://gabriellgomess.github.io/tempo-e-clima/build/static/js/main.9a5aeea8.js",
+    "static/media/hail.png": "https://gabriellgomess.github.io/tempo-e-clima/build/static/media/hail.78240612954fcb0aa798.png",
+    "static/media/snow.png": "https://gabriellgomess.github.io/tempo-e-clima/build/static/media/snow.696bd74f5798f5c71aa2.png",
+    "static/media/storm.png": "https://gabriellgomess.github.io/tempo-e-clima/build/static/media/storm.4a0f500e278116b32a74.png",
+    "static/media/clear_day.png": "https://gabriellgomess.github.io/tempo-e-clima/build/static/media/clear_day.2124b68753670bfcf24d.png",
+    "static/media/fog.png": "https://gabriellgomess.github.io/tempo-e-clima/build/static/media/fog.de9f05c04d6b50580d28.png",
+    "static/media/rain.png": "https://gabriellgomess.github.io/tempo-e-clima/build/static/media/rain.5caa248f7ba1a187af41.png",
+    "static/media/clear_night.png": "https://gabriellgomess.github.io/tempo-e-clima/build/static/media/clear_night.d804feff2171e1616148.png",
+    "static/media/cloudly_day.png": "https://gabriellgomess.github.io/tempo-e-clima/build/static/media/cloudly_day.404d8ee27165f9af4434.png",
+    "index.html": "https://gabriellgomess.github.io/tempo-e-clima/build/index.html",
+    "main.c96174a2.css.map": "https://gabriellgomess.github.io/tempo-e-clima/build/static/css/main.c96174a2.css.map",
+    "main.9a5aeea8.js.map": "https://gabriellgomess.github.io/tempo-e-clima/build/static/js/main.9a5aeea8.js.map"
   },
   "entrypoints": [
     "static/css/main.c96174a2.css",

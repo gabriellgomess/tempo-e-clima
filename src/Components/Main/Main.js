@@ -41,13 +41,16 @@ const Main = (props) => {
       case "storm":
         setTag(<img src={storm} alt="Imagem aqui" />)
       break;
+      case "cloudly_night":
+        setTag(<img src={clear_night} alt="Imagem aqui" />)
+      break;
       default:
     }
       
   }, [props.tempo]);
-
+  console.log(props.tempo.condition_slug)
   return (    
-    <div className={`${props.dark==true?"main-dark main col-sm-12 col-md-6 col-lg-6":"main main col-sm-12 col-md-6 col-lg-6"}`}>
+    <div className={`${props.dark===true?"main-dark main col-sm-12 col-md-6 col-lg-6":"main main col-sm-12 col-md-6 col-lg-6"}`}>
         <h1>Tempo Agora</h1>        
         <div className="body-main">
             <div className="main-left">
